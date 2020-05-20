@@ -11,7 +11,7 @@
     <div id="header" class = "header">
       <div id="logo">
         <div id="logo_text">
-          <h1>Book Store</a></h1>
+          <h1>Book Store1</a></h1>
         </div>
       </div>
       <div id="menubar">
