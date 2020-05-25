@@ -1,4 +1,4 @@
-for(i=1;i<=5;i++)
-{
-console.log("Hello visual Studio code %d",i);
-}
+var myModule = require('./Mymodule.js');
+myModule.myPrint('hi hey hi');
+myModule.myPrint2('hi hey hi');
+
