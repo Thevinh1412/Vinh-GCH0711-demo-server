@@ -1,4 +1,4 @@
-var myFunctions = {
+var myFunctions ={
     myPrint: function(msg){
         console.log(msg);
     },
