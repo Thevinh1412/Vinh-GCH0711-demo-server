@@ -1,13 +1,10 @@
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/";
 
-MongoClient.connect(url, function(err, db) {
+MongoClient.connect(url, async function(err, db) {
   if (err) throw err;
-  var dbo = db.db("Mydb");
-  var myobj = { name: "Company Inc", address: "Highway 37" };
-  dbo.collection("customers").insertOne(myobj, function(err, res) {
-    if (err) throw err;
-    console.log("1 document inserted");
-    db.close();
-  });
+  var dbo = db.db("MyDb");
+  var myobj = { name: "FPT Uni", address: "Dong Quan" };
+  await dbo.collection("customers").insertOne(myobj);
+  console.log("1 document inserted");
 });
