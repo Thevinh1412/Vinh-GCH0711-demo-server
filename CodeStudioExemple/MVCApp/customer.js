@@ -2,7 +2,7 @@ const express = require('express');
 var router = express.Router();
 
 var MongoClient = require('mongodb').MongoClient;
-var url = 'mongodb://localhost:27017/';
+var url = 'mongodb+srv://vinhgch17230asm2cloud:vinh1245@cluster0-no7z4.mongodb.net/test/';
 
 
 router.get('/',async (req,res)=>{
